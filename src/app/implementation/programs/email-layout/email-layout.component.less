@@ -1,0 +1,103 @@
+:host {
+  .email-container {
+    width: 100vw;
+    height: calc(~'100vh - 110px');
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px 4vw;
+    overflow-y: scroll;
+    position: relative;
+    .icon-box {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 12px;
+      right: 24px;
+      z-index: 1;
+      .icon {
+        cursor: pointer;
+        margin-left: 15px;
+        color: #2012D9;
+        font-size: 16px;
+        .iconfont {
+          vertical-align: -3px;
+        }
+      }
+    }
+
+    .exit-fullscreen-box{
+      margin-bottom: 12px;
+      text-align: right;
+      font-size: 0;
+      .exit-fullscreen{
+        width: 16px;
+        height: 16px;
+        color: #2012D9;
+        cursor: pointer;
+        z-index: 10;
+      }
+    }
+
+
+    >div {
+      color: #fff;
+    }
+
+    .title {
+      padding-top: 3vh;
+      font-size: 24px;
+    }
+
+    .subTitle {
+      padding-bottom: 3vh;
+      font-size: 12px;
+    }
+
+    .email-btn {
+      text-align: center;
+      margin-top: 5vh;
+      position: relative;
+
+      button {
+        margin-right: 30px;
+        border-radius: 16px;
+        text-align: center;
+        min-width: 160px;
+      }
+
+      img {
+        width: 120px;
+        height: auto;
+      }
+
+      .finishedTitle {
+        position: absolute;
+        color: rgb(142, 196, 244);
+        font-size: 16px;
+        left: calc(~'50% - 40px');
+        top: 48px;
+        transform: rotate(-15deg);
+        letter-spacing: 3px;
+      }
+    }
+  }
+  .fullscreen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    background-color: white;
+    padding: 15px;
+    height: 100%;
+    margin-top: 0;
+    ::ng-deep {
+      .submit-buttons-container{
+        background: white;
+      }
+    }
+  }
+}

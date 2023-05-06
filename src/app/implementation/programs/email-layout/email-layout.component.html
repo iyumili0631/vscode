@@ -1,0 +1,41 @@
+<div class="email-container">
+  <!-- 加载中的提示 -->
+  <nz-spin *ngIf="loading" [nzSpinning]="loading" style="margin-top: 50px;"></nz-spin>
+  <!-- http加载失败提示 -->
+  <request-failed-prompt *ngIf="!loading && loadingFailed" (reload)="onReload($event)"></request-failed-prompt>
+  <!-- 正文 -->
+  <ng-container *ngIf="!loading && !loadingFailed">
+    <ng-container *ngIf="!isFullScreen">
+      <div class="icon-box">
+        <!-- 全屏 -->
+        <svg
+          class="iconfont icon"
+          aria-hidden="true"
+          nz-tooltip
+          nzTooltipTitle="{{ 'dj-全屏' | translate }}"
+          nzTooltipPlacement="bottom"
+          (click)="fullScreenModel()"
+        >
+          <use xlink:href="#iconquanping"></use>
+        </svg>
+      </div>
+    </ng-container>
+    <!-- 退出全屏按钮 -->
+    <ng-container *ngIf="isFullScreen">
+      <div class="exit-fullscreen-box">
+        <svg
+          class="iconfont icon exit-fullscreen"
+          aria-hidden="true"
+          nz-tooltip
+          nzTooltipTitle="{{ 'dj-退出全屏' | translate }}"
+          nzTooltipPlacement="bottom"
+          (click)="exitFullScreenModel()"
+        >
+          <use xlink:href="#icontuichuquanping"></use>
+        </svg>
+      </div>
+    </ng-container>
+    <task-content *ngIf="isNotEmpty(templateJson)" [templateJson]="templateJson" (task_submit)="submit($event)">
+    </task-content>
+  </ng-container>
+</div>

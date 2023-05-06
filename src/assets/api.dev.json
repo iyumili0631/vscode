@@ -1,0 +1,23 @@
+{
+  "apiUrl": "",
+  "iamUrl": "https://iam-ddic2023ws.digiwincloud.com",
+  "emcUrl": "https://emc-ddic2023ws.digiwincloud.com",
+  "mscUrl": "https://msc-ddic2023ws.digiwincloud.com",
+  "eocUrl": "https://eoc-ddic2023ws.digiwincloud.com",
+  "dmcUrl": "https://dmc-ddic2023ws.digiwincloud.com",
+  "cacUrl": "https://cac-ddic2023ws.digiwincloud.com",
+  "themeMapUrl": "https://knowledgemaps-ddic2023ws.apps.digiwincloud.com/restful/service",
+  "smartDataUrl": "https://smartdata-ddic2023ws.apps.digiwincloud.com/restful/service",
+  "uibotUrl": "https://uibot-ddic2023ws.apps.digiwincloud.com",
+  "atmcUrl": "https://atmc-ddic2023ws.apps.digiwincloud.com",
+  "atdmUrl": "https://atdm-ddic2023ws.apps.digiwincloud.com",
+  "multiTenant": "true",
+  "athenaConsole": "https://athena-console-ddic2023ws.digiwincloud.com",
+  "consoleUrl": "https://console-ddic2023ws.apps.digiwincloud.com",
+  "muiUrl": "https://athena-ddic2023ws.digiwincloud.com",
+  "bpmUrl": "https://flowengine-ddic2023ws.apps.digiwincloud.com/restful/standard/bpm_cloud",
+  "digiwincloudUrl": "https://market-ddic2023ws.digiwincloud.com",
+  "aimUrl": "https://aim-ddic2023ws.apps.digiwincloud.com",
+  "aamUrl": "https://aam-ddic2023ws.apps.digiwincloud.com",
+  "audcUrl": "https://audc-ddic2023ws.apps.digiwincloud.com"
+}
